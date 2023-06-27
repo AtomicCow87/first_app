@@ -1,6 +1,5 @@
 class AddAuthorIdToBooks < ActiveRecord::Migration[6.1]
   def change
-    add_index :books, :first_name
-    add_column :books, :first_name, :string
+    add_column :books, :author_id, :integer
   end
 end
